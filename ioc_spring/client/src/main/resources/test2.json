@@ -1,0 +1,9 @@
+{
+  "header": {
+    "response_code": ""
+  },
+  "body": {
+    "name": "spring boot",
+    "age": 1024
+  }
+}
