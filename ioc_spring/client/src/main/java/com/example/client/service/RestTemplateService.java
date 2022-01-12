@@ -114,7 +114,7 @@ public class RestTemplateService {
         userRequest.setName("KIM");
         userRequest.setAge(10);
 
-        Req<UserRequest> req = new Req();
+        Req<UserRequest> req = new Req<>();
         req.setHeader(
                 new Req.Header()
         );
@@ -131,7 +131,6 @@ public class RestTemplateService {
                 .body(req);
 
         RestTemplate restTemplate = new RestTemplate();
-
 
         ResponseEntity<Req<UserResponse>> response
                 = restTemplate.exchange(requestEntity, new ParameterizedTypeReference<Req<UserResponse>>() {});

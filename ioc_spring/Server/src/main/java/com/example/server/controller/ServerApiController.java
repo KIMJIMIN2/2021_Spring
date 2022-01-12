@@ -21,13 +21,13 @@ public class ServerApiController {
 
     @PostMapping("/user/{userId}/name/{userName}")
     public Req<User> post(
-            HttpEntity<String> entity,
+         //   HttpEntity<String> entity,
             @RequestBody Req<User> user,
             @PathVariable int userId,
             @PathVariable String userName,
             @RequestHeader("x-authorization") String authorization,
             @RequestHeader("custom-header") String customHeader) {
-        log.info("req: {}", entity.getBody());
+//        log.info("req: {}", entity.getBody());
         log.info("userId : {}, user Name : {}", userId, userName);
         log.info("authorization : {}, customHeader : {}", authorization, customHeader);
         log.info("client req : {}", user);

@@ -19,7 +19,7 @@ public class ApiController {
     }
 
     @GetMapping("/hello")
-    public Req<UserResponse> getHello(){
+    public Req<UserResponse> getHello() {
         return restTemplateService.genericExchange();
     }
 
